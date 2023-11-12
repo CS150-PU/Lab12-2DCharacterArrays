@@ -1,7 +1,7 @@
 //******************************************************************************
 // File name:   main.cpp
 // Author:      CS Faculty
-// Date:        8/22/2023
+// Date:        11/12/2023
 // Class:       CS150-xx (xx is your section number)
 // Assignment:  Hello World
 // Purpose:     Display the message Hello World to the screen
@@ -19,16 +19,17 @@ const int MAX_KEYS = 10;
 const int NEW_LINE = '\n';
 
 void readFromFile (char charArray[][MAX_COLS], int &numRows,
-	int &numCols, const char fileName[]);
+	                 int &numCols, const char fileName[]);
 void displayArray (const char charArray[][MAX_COLS], int numRows,
-	int numCols);
+	                 int numCols);
 void getCodeKey (const char prompt[], char codekey[]);
 void encode (char charArray[][MAX_COLS], int numRows, int numCols,
-	const char codekey[]);
+	           const char codekey[]);
 void decode (char charArray[][MAX_COLS], int numRows, int numCols,
-	const char codekey[]);
+	           const char codekey[]);
 void writeToFile (char charArray[][MAX_COLS], int &numRows,
-	int &numCols, const char fileName[]);
+	                int &numCols, const char fileName[]);
+
 /***********************************************************************
 Function:     main
 
@@ -85,7 +86,7 @@ Parameters:		charArray  - array to be filled
 Returned:			None
 ***********************************************************************/
 void readFromFile (char charArray[][MAX_COLS], int &numRows,
-	int &numCols, const char fileName[]) {
+	                 int &numCols, const char fileName[]) {
 	ifstream inFile;
 	numRows = numCols = 0;
 	char ch;
@@ -117,16 +118,16 @@ void readFromFile (char charArray[][MAX_COLS], int &numRows,
 /***********************************************************************
 Function:			displayArray
 
-Description:	Displays the 2D array to the display.
+Description:	Displays the 2D array to the screen.
 
-Parameters:		charArray  - array to be filled
-							numRows		 - number of rows filled
-							numCols		 - number of columns filled
+Parameters:		charArray  - array to be displayed
+							numRows		 - number of rows 
+							numCols		 - number of columns 
 
 Returned:			None
 ***********************************************************************/
 void displayArray (const char charArray[][MAX_COLS], int numRows,
-	int numCols) {
+	                 int numCols) {
 
 }
 
@@ -154,14 +155,52 @@ Description:	Encodes a plaintext message
 										of characters in the codekey
 							HINT2: Remember the coolest operator on the planet!!!!
 
-Parameters:		charArray  - array to be filled
-							numRows		 - number of rows filled
-							numCols		 - number of columns filled
+Parameters:		charArray  - array to be encoded
+							numRows		 - number of rows 
+							numCols		 - number of columns 
 							codekey		 - secret key for encryption
 
 Returned:			None
 ***********************************************************************/
 void encode (char charArray[][MAX_COLS], int numRows, int numCols,
-	const char codekey[]) {
+	           const char codekey[]) {
+
+}
+
+/***********************************************************************
+Function:			writeToFile
+
+Description:	Writes the contents of a 2D array of characters to a data 
+							file character by character. Must first open the file
+							and close it once filled.
+
+Parameters:		charArray  - array to be copied to file
+							numRows		 - number of rows 
+							numCols		 - number of columns
+							fileName	 - file name to write to
+
+Returned:			None
+***********************************************************************/
+
+void writeToFile (char charArray[][MAX_COLS], int &numRows,
+	                int &numCols, const char fileName[]) {
+
+}
+
+/***********************************************************************
+Function:			decode
+
+Description:	decodes a ciphertext message
+
+Parameters:		charArray  - array to be decoded
+							numRows		 - number of rows 
+							numCols		 - number of columns 
+							codekey		 - secret key for decryption
+
+Returned:			None
+***********************************************************************/
+
+void decode (char charArray[][MAX_COLS], int numRows, int numCols,
+	           const char codekey[]) {
 
 }
