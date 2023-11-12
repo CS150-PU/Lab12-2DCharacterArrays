@@ -39,8 +39,8 @@ Parameters:   None
 Returned:     Exit Status
 ***********************************************************************/
 int main () {
-	const char PLAINTEXT_NAME[] = "plaintext.txt";
-	const char CIPHERTEXT_NAME[] = "ciphertext.txt";
+	const char PLAINTEXT_NAME[] = "data/plaintext.txt";
+	const char CIPHERTEXT_NAME[] = "data/ciphertext.txt";
 	const char CODE_KEY_PROMPT[] = "Enter code key: ";
 
 	char charArray[MAX_ROWS][MAX_COLS];
